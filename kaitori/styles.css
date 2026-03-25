@@ -501,14 +501,14 @@ img {
 
   .site-header__inner {
     gap: 8px;
-    padding: 0 44px 0 8px;
-    min-height: 34px;
+    padding: 0 42px 0 6px;
+    min-height: 30px;
   }
 
   .brand {
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.01em;
+    letter-spacing: 0;
     color: var(--nav);
     white-space: nowrap;
   }
@@ -520,35 +520,35 @@ img {
   .menu-button {
     display: inline-flex;
     position: absolute;
-    right: 7px;
-    top: 7px;
-    width: 21px;
+    right: 6px;
+    top: 5px;
+    width: 20px;
     height: 18px;
   }
 
   .hero {
-    margin-top: 34px;
+    margin-top: 30px;
   }
 
   .hero__image {
-    min-height: 302px;
-    background-position: center 52%;
+    min-height: 246px;
+    background-position: center 58%;
   }
 
   .section {
-    padding: 34px 0 24px;
+    padding: 28px 0 20px;
   }
 
   .section-shell {
-    width: calc(100% - 18px);
-    margin-left: 6px;
-    margin-right: 12px;
-    grid-template-columns: 18px minmax(0, 1fr);
-    gap: 14px;
+    width: calc(100% - 12px);
+    margin-left: 4px;
+    margin-right: 8px;
+    grid-template-columns: 14px minmax(0, 1fr);
+    gap: 10px;
   }
 
   .section-label {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.2;
   }
 
@@ -558,28 +558,28 @@ img {
   .number-card p,
   .faq-item p,
   .contact__inner > p {
-    font-size: 13px;
-    line-height: 2;
-    letter-spacing: 0.03em;
+    font-size: 11px;
+    line-height: 1.95;
+    letter-spacing: 0.02em;
   }
 
   .section-title,
   .contact__inner h2 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
   }
 
   .number-card h3,
   .faq-item h3,
   .mini-card h3 {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.4;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
   }
 
   .flow-list li {
-    font-size: 15px;
+    font-size: 13px;
     align-items: start;
     gap: 12px;
     line-height: 1.6;
@@ -594,7 +594,7 @@ img {
 
   .banner__copy {
     padding: 10px 12px;
-    font-size: 10px;
+    font-size: 9px;
     letter-spacing: 0.12em;
   }
 
@@ -637,11 +637,11 @@ img {
   }
 
   .lead {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 
   .photo-card img {
-    aspect-ratio: 1.7 / 1;
+    aspect-ratio: 2.2 / 1;
   }
 
   .field-row {
