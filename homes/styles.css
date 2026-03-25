@@ -82,15 +82,7 @@ textarea {
 
 .brand {
   display: inline-grid;
-  gap: 2px;
-}
-
-.brand__eyebrow {
-  font-family: var(--font-condensed);
-  font-size: 12px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(30, 57, 96, 0.72);
+  gap: 0;
 }
 
 .brand__name {
@@ -190,8 +182,6 @@ textarea {
   padding: 70px 0 88px;
 }
 
-.hero__eyebrow,
-.section-heading__eyebrow,
 .reason-card__kicker,
 .hero__panel-label {
   margin: 0 0 14px;
@@ -201,7 +191,6 @@ textarea {
   text-transform: uppercase;
 }
 
-.hero__eyebrow,
 .hero__panel-label {
   color: rgba(255, 244, 225, 0.78);
 }
@@ -341,7 +330,6 @@ textarea {
   top: 118px;
 }
 
-.section-heading__eyebrow,
 .reason-card__kicker {
   color: rgba(30, 57, 96, 0.68);
 }
@@ -666,10 +654,6 @@ textarea {
   padding: 24px 0 34px;
 }
 
-.brand--footer .brand__eyebrow {
-  color: rgba(30, 57, 96, 0.58);
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -797,10 +781,6 @@ textarea {
 @media (max-width: 560px) {
   .site-header__inner {
     min-height: 66px;
-  }
-
-  .brand__eyebrow {
-    font-size: 10px;
   }
 
   .brand__name {
