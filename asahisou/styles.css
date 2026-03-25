@@ -47,7 +47,7 @@ iframe {
   top: 0;
   z-index: 50;
   backdrop-filter: blur(12px);
-  background: rgba(255, 253, 247, 0.88);
+  background: rgba(255, 253, 247, 0.9);
   border-bottom: 1px solid rgba(96, 76, 51, 0.08);
 }
 
@@ -65,7 +65,7 @@ iframe {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 12px 0;
+  padding: 10px 0;
 }
 
 .brand {
@@ -75,7 +75,7 @@ iframe {
 }
 
 .brand img {
-  width: 130px;
+  width: 118px;
 }
 
 .brand__text {
@@ -84,6 +84,7 @@ iframe {
   font-size: 12px;
   color: var(--muted);
   letter-spacing: 0.08em;
+  line-height: 1.35;
 }
 
 .site-nav {
@@ -92,7 +93,7 @@ iframe {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 10px 18px;
-  font-size: 14px;
+  font-size: 12px;
   color: var(--muted);
 }
 
@@ -111,21 +112,21 @@ iframe {
 .page-hero::after {
   content: "";
   position: absolute;
-  width: 220px;
+  width: 300px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.72);
   filter: blur(2px);
 }
 
 .page-hero::before {
-  top: -90px;
-  left: -90px;
+  top: -150px;
+  left: -150px;
 }
 
 .page-hero::after {
-  right: -100px;
-  bottom: -100px;
+  right: -130px;
+  bottom: -130px;
 }
 
 .page-hero__backdrop {
@@ -139,7 +140,7 @@ iframe {
 .page-hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(28, 95, 145, 0.18), rgba(15, 47, 91, 0.16));
+  background: linear-gradient(180deg, rgba(28, 95, 145, 0.1), rgba(15, 47, 91, 0.12));
 }
 
 .page-hero__inner {
@@ -147,8 +148,8 @@ iframe {
   z-index: 1;
   width: min(1100px, calc(100% - 32px));
   margin: 0 auto;
-  min-height: 760px;
-  padding: 56px 0 64px;
+  min-height: 780px;
+  padding: 48px 0 52px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -175,6 +176,22 @@ iframe {
   box-shadow: 0 12px 24px rgba(25, 44, 92, 0.16);
 }
 
+.hero-social--phone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 24px rgba(25, 44, 92, 0.16);
+}
+
+.hero-social--phone img {
+  width: 18px;
+  height: 18px;
+}
+
 .hero-social img {
   width: 18px;
   height: 18px;
@@ -195,9 +212,9 @@ iframe {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   margin: 0;
-  min-height: 250px;
-  font-size: 21px;
-  line-height: 2.15;
+  min-height: 270px;
+  font-size: 20px;
+  line-height: 2.25;
   letter-spacing: 0.24em;
   text-shadow: 0 2px 10px rgba(19, 46, 92, 0.28);
 }
@@ -236,6 +253,16 @@ iframe {
   height: auto;
 }
 
+.retroline {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 18px;
+}
+
+.retroline img {
+  width: min(252px, 70vw);
+}
+
 .lede,
 .section-copy,
 .caption {
@@ -252,6 +279,10 @@ iframe {
 .about-copy {
   display: grid;
   gap: 18px;
+}
+
+.about-copy p {
+  font-size: 15px;
 }
 
 .about-copy p,
@@ -304,6 +335,7 @@ iframe {
   font-weight: 700;
   letter-spacing: 0.04em;
   box-shadow: 0 16px 28px rgba(52, 64, 99, 0.12);
+  font-size: 15px;
 }
 
 .button--tel {
@@ -329,6 +361,10 @@ iframe {
   box-shadow: none;
 }
 
+.button--ghost:hover {
+  background: rgba(47, 114, 207, 0.14);
+}
+
 .room-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -339,7 +375,7 @@ iframe {
 .room-grid img {
   border-radius: 24px;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   box-shadow: var(--shadow);
 }
@@ -419,6 +455,10 @@ iframe {
 .access-endcap img:first-child {
   border-radius: 26px;
   box-shadow: var(--shadow);
+}
+
+.access-endcap img:last-child {
+  width: min(420px, 82vw);
 }
 
 .gallery-shell,
@@ -531,7 +571,7 @@ iframe {
   }
 
   .brand img {
-    width: 108px;
+    width: 94px;
   }
 
   .brand__text {
@@ -549,12 +589,12 @@ iframe {
 
   .page-hero::before,
   .page-hero::after {
-    width: 160px;
+    width: 170px;
   }
 
   .page-hero__inner {
-    min-height: 620px;
-    padding: 22px 0 40px;
+    min-height: 640px;
+    padding: 16px 0 34px;
   }
 
   .hero-copy {
@@ -566,7 +606,7 @@ iframe {
   }
 
   .hero-copy__tagline {
-    min-height: 200px;
+    min-height: 188px;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.16em;
@@ -581,6 +621,11 @@ iframe {
     height: 30px;
   }
 
+  .hero-social--phone {
+    width: 30px;
+    height: 30px;
+  }
+
   .section {
     padding: 64px 0;
   }
@@ -589,6 +634,14 @@ iframe {
   .twitter-card,
   .access-card {
     padding: 24px 20px;
+  }
+
+  .section-copy,
+  .reserve-card p,
+  .access-card p,
+  .details-list details > div,
+  .caption {
+    font-size: 14px;
   }
 
   .room-grid {
