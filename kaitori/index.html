@@ -22,14 +22,22 @@
   <link rel="apple-touch-icon" type="image/png" href="https://storage.googleapis.com/production-os-assets/assets/13850312-3b00-4fa7-8ec1-957f2eb67a06">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Cormorant+Garamond:wght@500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="top">
     <div class="site-header__inner">
-      <a class="brand" href="/kaitori/">空き家買い取り 八丈島ホームズ</a>
-      <nav class="site-nav" aria-label="メインナビゲーション">
+      <a class="brand" href="/kaitori/">
+        <span class="brand__eyebrow">Hachijojima Homes</span>
+        <span class="brand__name">空き家買い取り 八丈島ホームズ</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
         <a href="#message">ご挨拶</a>
         <a href="#why">なぜ「買取」？</a>
         <a href="#yakusoku">３つのメリット</a>
@@ -38,163 +46,197 @@
         <a href="#faq">よくあるご質問</a>
         <a class="site-nav__cta" href="#contact">お問い合わせ</a>
       </nav>
-      <button class="menu-button" type="button" aria-label="メニューを開く">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero__image"></div>
-      <h1 class="sr-only">一軒一軒、大事に、丁寧に。</h1>
-    </section>
-
-    <section class="section" id="message">
-      <div class="section-shell section-shell--split">
-        <div class="section-label">ご挨拶</div>
-        <div class="section-main">
-          <p class="lead">八丈島・伊豆諸島の空き家を大切に引き継ぎ、心を込めて再生し、島に優しい息吹を吹き込みます。</p>
-          <p class="lead">島の自然と文化を守りながら、皆さまの大切な不動産を責任をもって次世代へつなぎます。</p>
-          <figure class="photo-card photo-card--message">
-            <img src="assets/message-photo-final.png" alt="現地写真">
-          </figure>
+      <div class="hero__image" aria-hidden="true"></div>
+      <div class="hero__veil"></div>
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="hero__eyebrow">Vacant House Purchase in Hachijojima</p>
+          <h1>一軒一軒、<br>大事に、丁寧に。</h1>
+          <p class="hero__lead">八丈島・伊豆諸島の空き家を引き継ぎ、現況のままでも、できるだけ静かに、できるだけ早く次の一歩へつなぎます。</p>
+          <div class="hero__actions">
+            <a class="button button--solid" href="#contact">相談してみる</a>
+            <a class="button button--ghost" href="#nagare">買取の流れを見る</a>
+          </div>
         </div>
+        <aside class="hero__panel">
+          <p class="hero__panel-label">相談しやすい3つの特徴</p>
+          <ul class="hero__facts">
+            <li><strong>島外在住でも</strong><span>オンライン・郵送で進行可能</span></li>
+            <li><strong>残置物付きでも</strong><span>現況のまま相談可能</span></li>
+            <li><strong>最短2週間</strong><span>条件次第でスピード現金化</span></li>
+          </ul>
+        </aside>
       </div>
     </section>
 
-    <section class="section" id="why">
-      <div class="section-shell section-shell--split">
-        <div class="section-label">なぜ<br>「買取」？</div>
-        <div class="section-main">
-          <h2 class="section-title">不動産会社<br>との違い</h2>
-          <div class="body-copy">
-            <p>離島は買い手探しに時間がかかり、周囲の視線も。当社が直接お引き取りすることで、</p>
-            <ul class="check-list">
-              <li>内覧は最小限</li>
-              <li>プライバシー保持</li>
-              <li>手続きは最短ルート</li>
-            </ul>
-            <p>実績多数。長年放置されていた空き家が短期間で片付き、喜びの声を多くいただいています。</p>
+    <section class="section section--intro" id="message">
+      <div class="container section-grid">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Message</p>
+          <h2>ご挨拶</h2>
+        </div>
+        <div class="section-content">
+          <div class="intro-card">
+            <div class="intro-card__text">
+              <p>八丈島・伊豆諸島の空き家を大切に引き継ぎ、心を込めて再生し、島に優しい息吹を吹き込みます。</p>
+              <p>島の自然と文化を守りながら、皆さまの大切な不動産を責任をもって次世代へつなぎます。</p>
+            </div>
+            <figure class="intro-card__photo">
+              <img src="assets/message-photo-final.png" alt="現地写真">
+            </figure>
           </div>
         </div>
       </div>
-      <div class="banner banner--dark">
-        <div class="banner__copy">来島不要で完結するケースも！</div>
+    </section>
+
+    <section class="section section--soft" id="why">
+      <div class="container section-grid">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Why Purchase</p>
+          <h2>なぜ<br>「買取」？</h2>
+        </div>
+        <div class="section-content">
+          <div class="reason-card">
+            <div class="reason-card__headline">
+              <p class="reason-card__kicker">不動産会社との違い</p>
+              <h3>買い手探しより、<br>まず整理を進めたい方へ。</h3>
+            </div>
+            <div class="reason-card__body">
+              <p>離島は買い手探しに時間がかかり、周囲の視線も気になりがちです。当社が直接お引き取りすることで、売却の負担を大きく減らせます。</p>
+              <ul class="check-list">
+                <li>内覧は最小限</li>
+                <li>プライバシー保持</li>
+                <li>手続きは最短ルート</li>
+              </ul>
+              <p>長年放置されていた空き家が短期間で片付き、安心して次の手続きを進められたという声も多くいただいています。</p>
+            </div>
+          </div>
+          <div class="wide-banner wide-banner--harbor">
+            <p>来島不要で完結するケースもあります。</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section" id="yakusoku">
-      <div class="section-shell section-shell--split">
-        <div class="section-label">３つのメリット</div>
-        <div class="section-main">
-          <div class="merit-list">
-            <article class="number-card">
-              <div class="number-card__head">
-                <span class="number-card__no">1</span>
-                <h3>島外在住でもOK</h3>
-              </div>
-              <p>オンライン・郵送対応でご負担を最小限に</p>
+      <div class="container section-grid">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Benefits</p>
+          <h2>３つのメリット</h2>
+        </div>
+        <div class="section-content">
+          <div class="benefit-grid">
+            <article class="benefit-card">
+              <span class="benefit-card__no">01</span>
+              <h3>島外在住でもOK</h3>
+              <p>オンライン・郵送対応で、ご本人の移動負担を最小限に抑えます。</p>
             </article>
-            <article class="number-card">
-              <div class="number-card__head">
-                <span class="number-card__no">2</span>
-                <h3>状態不問</h3>
-              </div>
-              <p>古家や残置物付き物件も現況でご相談可能</p>
+            <article class="benefit-card">
+              <span class="benefit-card__no">02</span>
+              <h3>状態不問</h3>
+              <p>古家や残置物付き物件も、現況のままご相談いただけます。</p>
             </article>
-            <article class="number-card">
-              <div class="number-card__head">
-                <span class="number-card__no">3</span>
-                <h3>スピード現金化</h3>
-              </div>
-              <p>最短２週間～で契約→入金</p>
+            <article class="benefit-card">
+              <span class="benefit-card__no">03</span>
+              <h3>スピード現金化</h3>
+              <p>条件次第では最短２週間で契約から入金まで進められます。</p>
             </article>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--compact" id="konna">
-      <div class="section-shell section-shell--split">
-        <div class="section-label">こんな方から</div>
-        <div class="section-main">
-          <div class="number-grid">
-            <article class="mini-card">
-              <span class="mini-card__no">1</span>
-              <h3>空き家を管理できず放置している</h3>
-            </article>
-            <article class="mini-card">
-              <span class="mini-card__no">2</span>
-              <h3>相続したが住む予定がない</h3>
-            </article>
-            <article class="mini-card">
-              <span class="mini-card__no">3</span>
-              <h3>手間なく早く売りたい</h3>
-            </article>
-            <article class="mini-card">
-              <span class="mini-card__no">4</span>
-              <h3>急いで現金化したい</h3>
-            </article>
-            <article class="mini-card">
-              <span class="mini-card__no">5</span>
-              <h3>近所になるべく知られず処分したい</h3>
-            </article>
+    <section class="section section--soft" id="konna">
+      <div class="container section-grid">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">For You</p>
+          <h2>こんな方から</h2>
+        </div>
+        <div class="section-content">
+          <div class="concern-list">
+            <article class="concern-item"><span>1</span><p>空き家を管理できず放置している</p></article>
+            <article class="concern-item"><span>2</span><p>相続したが住む予定がない</p></article>
+            <article class="concern-item"><span>3</span><p>手間なく早く売りたい</p></article>
+            <article class="concern-item"><span>4</span><p>急いで現金化したい</p></article>
+            <article class="concern-item"><span>5</span><p>近所になるべく知られず処分したい</p></article>
+          </div>
+          <div class="wide-banner wide-banner--ship">
+            <p>最短2週間で売却完了</p>
           </div>
         </div>
-      </div>
-      <div class="banner banner--photo">
-        <div class="banner__copy">最短2週間で売却完了！</div>
       </div>
     </section>
 
     <section class="section" id="nagare">
-      <div class="section-shell section-shell--split">
-        <div class="section-label">買取の流れ</div>
-        <div class="section-main">
-          <ol class="flow-list">
-            <li><span>1</span><strong>お問い合わせ</strong></li>
-            <li><span>2</span><strong>ヒアリング→現地確認→価格提示</strong></li>
-            <li><span>3</span><strong>売買契約/書類手続（オンライン可）</strong></li>
-            <li><span>4</span><strong>代金お支払い &amp; 登記手続</strong></li>
+      <div class="container section-grid">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Flow</p>
+          <h2>買取の流れ</h2>
+        </div>
+        <div class="section-content">
+          <ol class="flow-track">
+            <li><span>1</span><div><strong>お問い合わせ</strong><p>現況やご希望をお聞きします。</p></div></li>
+            <li><span>2</span><div><strong>ヒアリング・現地確認・価格提示</strong><p>状況を確認し、条件を整理した上で金額をご提案します。</p></div></li>
+            <li><span>3</span><div><strong>売買契約・書類手続き</strong><p>オンラインや郵送を交えながら、無理のない段取りで進めます。</p></div></li>
+            <li><span>4</span><div><strong>代金お支払い・登記手続き</strong><p>完了後、次の整理や相続手続きへ進みやすい状態を作ります。</p></div></li>
           </ol>
         </div>
       </div>
     </section>
 
-    <section class="section section--faq" id="faq">
-      <div class="section-shell section-shell--split">
-        <div class="section-label">よくあるご質問</div>
-        <div class="section-main">
-          <div class="faq-list">
-            <article class="faq-item">
-              <div class="faq-item__head"><span>Q</span><h3>建物が老朽化していても？</h3></div>
-              <p>現況を確認し、可否と条件を迅速回答します。</p>
+    <section class="section section--soft" id="faq">
+      <div class="container section-grid">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">FAQ</p>
+          <h2>よくあるご質問</h2>
+        </div>
+        <div class="section-content">
+          <div class="faq-grid">
+            <article class="faq-card">
+              <span>Q1</span>
+              <h3>建物が老朽化していても？</h3>
+              <p>現況を確認し、可否と条件を迅速に回答します。</p>
             </article>
-            <article class="faq-item">
-              <div class="faq-item__head"><span>Q</span><h3>遠方在住だが対応できる？</h3></div>
-              <p>はい。来島不要で完結するケースも。</p>
+            <article class="faq-card">
+              <span>Q2</span>
+              <h3>遠方在住だが対応できる？</h3>
+              <p>はい。来島不要で完結するケースもあります。</p>
             </article>
-            <article class="faq-item">
-              <div class="faq-item__head"><span>Q</span><h3>周囲に知られたくない。</h3></div>
+            <article class="faq-card">
+              <span>Q3</span>
+              <h3>周囲に知られたくない。</h3>
               <p>秘密厳守で進めますのでご安心ください。</p>
             </article>
-            <article class="faq-item">
-              <div class="faq-item__head"><span>Q</span><h3>相続手続き途中でも売れる？</h3></div>
-              <p>要確認。まずはご相談を。</p>
+            <article class="faq-card">
+              <span>Q4</span>
+              <h3>相続手続き途中でも売れる？</h3>
+              <p>状況によって進め方が変わるため、まずはご相談ください。</p>
             </article>
+          </div>
+          <div class="wide-banner wide-banner--quiet">
+            <p>静かな整理から、次の暮らしへ。</p>
           </div>
         </div>
       </div>
-      <div class="banner banner--quiet"></div>
     </section>
 
     <section class="contact" id="contact">
-      <div class="contact__inner">
-        <h2>お問い合わせ</h2>
-        <p>迷っている段階でも大歓迎です。お気軽にお問い合わせください。</p>
+      <div class="container contact-shell">
+        <div class="contact-copy">
+          <p class="section-heading__eyebrow">Contact</p>
+          <h2>お問い合わせ</h2>
+          <p>迷っている段階でも大歓迎です。状況がまとまっていなくても構いません。わかる範囲だけでもお知らせください。</p>
+          <ul class="contact-points">
+            <li>島外からのご相談歓迎</li>
+            <li>現況のままでも相談可能</li>
+            <li>秘密厳守で対応</li>
+          </ul>
+        </div>
         <form action="https://formsubmit.co/byakuhodo@gmail.com" method="POST" accept-charset="UTF-8" class="contact-form">
           <input type="hidden" name="_subject" value="八丈島ホームズ 空き家買取のお問い合わせ">
           <input type="hidden" name="_captcha" value="false">
@@ -223,7 +265,7 @@
             <span>物件のご状況やご希望等、なるべく詳しくご記入ください</span>
             <textarea name="お問い合わせ内容" required></textarea>
           </label>
-          <button type="submit">送信</button>
+          <button type="submit" class="button button--solid">送信する</button>
           <p class="contact-status" hidden>お問い合わせを送信しました。</p>
         </form>
       </div>
@@ -231,18 +273,42 @@
   </main>
 
   <footer class="site-footer">
-    <nav class="site-footer__nav" aria-label="フッターナビゲーション">
-      <a href="#message">ご挨拶</a>
-      <a href="#why">なぜ「買取」？</a>
-      <a href="#yakusoku">３つのメリット</a>
-      <a href="#konna">こんな方から</a>
-      <a href="#nagare">買取の流れ</a>
-      <a href="#faq">よくあるご質問</a>
-      <a href="#contact">お問い合わせ</a>
-    </nav>
+    <div class="site-footer__inner">
+      <a class="brand brand--footer" href="/kaitori/">
+        <span class="brand__eyebrow">Hachijojima Homes</span>
+        <span class="brand__name">空き家買い取り 八丈島ホームズ</span>
+      </a>
+      <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+        <a href="#message">ご挨拶</a>
+        <a href="#why">なぜ「買取」？</a>
+        <a href="#yakusoku">３つのメリット</a>
+        <a href="#konna">こんな方から</a>
+        <a href="#nagare">買取の流れ</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
   </footer>
 
   <script>
+    const menuButton = document.querySelector(".menu-button");
+    const siteNav = document.querySelector(".site-nav");
+
+    if (menuButton && siteNav) {
+      menuButton.addEventListener("click", () => {
+        const expanded = menuButton.getAttribute("aria-expanded") === "true";
+        menuButton.setAttribute("aria-expanded", String(!expanded));
+        siteNav.classList.toggle("is-open", !expanded);
+      });
+
+      siteNav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menuButton.setAttribute("aria-expanded", "false");
+          siteNav.classList.remove("is-open");
+        });
+      });
+    }
+
     if (new URLSearchParams(window.location.search).get("contact") === "sent") {
       const status = document.querySelector(".contact-status");
       if (status) {
