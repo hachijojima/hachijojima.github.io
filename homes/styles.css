@@ -443,23 +443,10 @@ textarea {
 
 .check-list li,
 .contact-points li {
-  position: relative;
-  padding-left: 18px;
   color: var(--ink);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.04em;
-}
-
-.check-list li::before,
-.contact-points li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.75em;
-  width: 8px;
-  height: 1px;
-  background: var(--gold);
 }
 
 .wide-banner {
