@@ -217,6 +217,7 @@
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_next" value="https://hachijojima.github.io/?contact=sent">
+        <input type="hidden" name="_replyto" id="replyto-field" value="">
         <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off">
 
         <div class="field">
@@ -244,6 +245,14 @@
   <script>
     (function () {
       var params = new URLSearchParams(window.location.search);
+      var form = document.querySelector("form");
+      var email = document.getElementById("email");
+      var replyTo = document.getElementById("replyto-field");
+      if (form && email && replyTo) {
+        form.addEventListener("submit", function () {
+          replyTo.value = email.value.trim();
+        });
+      }
       if (params.get("contact") !== "sent") return;
       var notice = document.getElementById("contact-success");
       if (notice) notice.classList.add("is-visible");
