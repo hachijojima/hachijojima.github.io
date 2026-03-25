@@ -15,7 +15,6 @@
   --radius-lg: 28px;
   --radius-md: 18px;
   --font-sans: "Noto Sans JP", "Hiragino Sans", sans-serif;
-  --font-serif: "Cormorant Garamond", "Times New Roman", serif;
   --font-condensed: "Barlow Condensed", "Noto Sans JP", sans-serif;
 }
 
@@ -211,16 +210,17 @@ textarea {
 .section-heading h2,
 .contact-copy h2 {
   margin: 0;
-  font-family: var(--font-serif);
-  font-weight: 600;
-  line-height: 0.95;
-  letter-spacing: 0.03em;
+  font-family: var(--font-sans);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.02em;
 }
 
 .hero h1 {
   color: #fff9ef;
   font-size: clamp(58px, 8vw, 112px);
   text-wrap: balance;
+  text-shadow: 0 10px 30px rgba(8, 16, 30, 0.24);
 }
 
 .hero__lead {
@@ -419,9 +419,11 @@ textarea {
 
 .reason-card__headline h3 {
   margin: 0;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
+  font-weight: 900;
   font-size: clamp(32px, 3vw, 48px);
-  line-height: 1.05;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
   color: var(--navy-deep);
 }
 
