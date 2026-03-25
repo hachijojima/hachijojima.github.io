@@ -244,14 +244,14 @@ img {
   box-shadow: 10px 10px 0 rgb(100, 100, 100);
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.24)),
-    url("assets/ship-banner-2.png") center center / cover no-repeat;
+    url("assets/ship-strip-wide.png") center center / cover no-repeat;
 }
 
 .banner--quiet {
   box-shadow: 10px 10px 0 rgb(100, 100, 100);
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
-    url("assets/ship-banner.png") center center / cover no-repeat;
+    url("assets/ship-strip-wide.png") center center / cover no-repeat;
 }
 
 .banner__copy {
@@ -264,7 +264,7 @@ img {
 .merit-list,
 .faq-list {
   display: grid;
-  gap: 30px;
+  gap: 22px;
 }
 
 .number-card,
@@ -322,7 +322,7 @@ img {
 
 .number-grid {
   display: grid;
-  gap: 24px;
+  gap: 18px;
 }
 
 .mini-card {
@@ -334,7 +334,7 @@ img {
 
 .flow-list {
   display: grid;
-  gap: 20px;
+  gap: 16px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -373,7 +373,7 @@ img {
 }
 
 .contact {
-  padding: 80px 0 110px;
+  padding: 64px 0 88px;
   background: #fff;
 }
 
@@ -629,7 +629,7 @@ img {
   .merit-list,
   .faq-list,
   .flow-list {
-    gap: 14px;
+    gap: 10px;
   }
 
   .mini-card {
