@@ -118,10 +118,10 @@ img {
 }
 
 .hero__image {
-  min-height: 682px;
+  min-height: 610px;
   background:
     linear-gradient(180deg, rgba(11, 20, 52, 0.1), rgba(11, 20, 52, 0.24)),
-    url("https://storage.googleapis.com/production-os-assets/assets/6a84ca4f-1306-4452-a7ad-7c85684ca88e") center center / cover no-repeat;
+    url("https://storage.googleapis.com/production-os-assets/assets/6a84ca4f-1306-4452-a7ad-7c85684ca88e") center 54% / cover no-repeat;
 }
 
 .sr-only {
@@ -137,7 +137,7 @@ img {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 68px 0;
 }
 
 .section--compact {
@@ -225,38 +225,39 @@ img {
 .banner {
   width: min(93%, 1340px);
   margin: 44px auto 0;
-  min-height: 200px;
+  height: 146px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
+  overflow: hidden;
 }
 
 .banner--dark {
   box-shadow: -10px 10px 0 rgb(100, 100, 100);
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.35)),
-    url("assets/banner-2.png") center top / cover no-repeat;
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.26)),
+    url("assets/banner-2.png") center center / cover no-repeat;
 }
 
 .banner--photo {
   box-shadow: 10px 10px 0 rgb(100, 100, 100);
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.28)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.24)),
     url("assets/ship-banner-2.png") center center / cover no-repeat;
 }
 
 .banner--quiet {
   box-shadow: 10px 10px 0 rgb(100, 100, 100);
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.24)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
     url("assets/ship-banner.png") center center / cover no-repeat;
 }
 
 .banner__copy {
-  padding: 16px 24px;
-  font-size: 20px;
-  letter-spacing: 0.18em;
+  padding: 12px 18px;
+  font-size: 14px;
+  letter-spacing: 0.16em;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
 }
 
@@ -531,7 +532,7 @@ img {
   }
 
   .hero__image {
-    min-height: 246px;
+    min-height: 216px;
     background-position: center 58%;
   }
 
@@ -588,7 +589,7 @@ img {
   .banner {
     width: calc(100% - 10px);
     margin-top: 18px;
-    min-height: 58px;
+    height: 46px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
