@@ -185,7 +185,6 @@ textarea {
   padding: 70px 0 88px;
 }
 
-.reason-card__kicker,
 .hero__panel-label {
   margin: 0 0 14px;
   font-family: var(--font-condensed);
@@ -336,10 +335,6 @@ textarea {
   top: 118px;
 }
 
-.reason-card__kicker {
-  color: rgba(30, 57, 96, 0.68);
-}
-
 .section-heading h2,
 .contact-copy h2 {
   font-size: clamp(36px, 4vw, 64px);
@@ -440,27 +435,6 @@ textarea {
   color: var(--ink);
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.04em;
-}
-
-.wide-banner {
-  min-height: 0;
-  padding: 20px 24px;
-  border-radius: var(--radius-md);
-  background: rgba(30, 57, 96, 0.06);
-  box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(24, 34, 49, 0.08);
-}
-
-.wide-banner p {
-  margin: 0;
-  max-width: none;
-  padding: 0;
-  color: var(--navy-deep);
-  font-family: var(--font-sans);
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 1.7;
   letter-spacing: 0.04em;
 }
 
@@ -769,11 +743,6 @@ textarea {
     background: rgba(30, 57, 96, 0.06);
   }
 
-  .wide-banner p {
-    max-width: none;
-    font-size: 14px;
-    line-height: 1.75;
-  }
 }
 
 @media (max-width: 560px) {
@@ -790,7 +759,7 @@ textarea {
   }
 
   .hero h1 {
-    font-size: 34px;
+    font-size: 30px;
     line-height: 1.04;
   }
 
@@ -818,17 +787,6 @@ textarea {
   .section-heading h2,
   .contact-copy h2 {
     font-size: 42px;
-  }
-
-  .wide-banner {
-    min-height: 110px;
-    padding: 16px;
-  }
-
-  .wide-banner p {
-    font-size: 13px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
   }
 
   .benefit-card,
