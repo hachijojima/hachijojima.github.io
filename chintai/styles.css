@@ -516,9 +516,9 @@ main > section,
   }
 
   .hero h1 {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 1.12;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.01em;
   }
 
 
