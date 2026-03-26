@@ -117,6 +117,10 @@ main > section,
   line-height: 1.26;
 }
 
+.hero h1 span {
+  display: block;
+}
+
 .hero__lead,
 .intro p,
 .status-card p,
@@ -493,6 +497,10 @@ main > section,
   .section-head h2,
   .status-card h2 {
     font-size: 30px;
+  }
+
+  .hero h1 span {
+    display: inline;
   }
 
   .intro,
