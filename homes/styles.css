@@ -449,14 +449,17 @@ textarea {
 
 .wide-banner p {
   margin: 0;
-  padding: 10px 14px;
-  border-radius: 999px;
-  background: rgba(20, 31, 48, 0.44);
-  color: #fff;
-  font-family: var(--font-condensed);
-  font-size: 15px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  max-width: 520px;
+  padding: 14px 18px;
+  border-radius: 16px;
+  background: rgba(255, 250, 241, 0.84);
+  color: var(--navy-deep);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  box-shadow: 0 12px 24px rgba(20, 31, 48, 0.12);
 }
 
 .wide-banner--harbor {
@@ -776,6 +779,12 @@ textarea {
     text-align: center;
     background: rgba(30, 57, 96, 0.06);
   }
+
+  .wide-banner p {
+    max-width: none;
+    font-size: 14px;
+    line-height: 1.75;
+  }
 }
 
 @media (max-width: 560px) {
@@ -824,7 +833,8 @@ textarea {
 
   .wide-banner p {
     font-size: 12px;
-    letter-spacing: 0.12em;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
   }
 
   .benefit-card,
