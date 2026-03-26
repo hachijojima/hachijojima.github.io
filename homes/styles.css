@@ -178,7 +178,7 @@ textarea {
 }
 
 .hero__copy {
-  max-width: 620px;
+  max-width: 760px;
   padding: 70px 0 88px;
 }
 
@@ -207,9 +207,12 @@ textarea {
 
 .hero h1 {
   color: #fff9ef;
-  font-size: clamp(48px, 6.4vw, 86px);
-  text-wrap: balance;
+  font-size: clamp(44px, 5.6vw, 76px);
   text-shadow: 0 10px 30px rgba(8, 16, 30, 0.24);
+}
+
+.hero__line {
+  white-space: nowrap;
 }
 
 .hero__lead {
@@ -450,16 +453,14 @@ textarea {
 .wide-banner p {
   margin: 0;
   max-width: 520px;
-  padding: 14px 18px;
-  border-radius: 16px;
-  background: rgba(255, 250, 241, 0.84);
-  color: var(--navy-deep);
+  padding: 0;
+  color: rgba(255, 249, 239, 0.96);
   font-family: var(--font-sans);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 1.7;
   letter-spacing: 0.04em;
-  box-shadow: 0 12px 24px rgba(20, 31, 48, 0.12);
+  text-shadow: 0 8px 24px rgba(8, 16, 30, 0.34);
 }
 
 .wide-banner--harbor {
@@ -804,6 +805,10 @@ textarea {
     font-size: 48px;
   }
 
+  .hero__line {
+    white-space: normal;
+  }
+
   .hero__lead,
   .intro-card__text p,
   .reason-card__body p,
@@ -832,7 +837,7 @@ textarea {
   }
 
   .wide-banner p {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.7;
     letter-spacing: 0.03em;
   }
