@@ -170,7 +170,7 @@ main > section,
 }
 
 .status-card {
-  padding: 30px;
+  padding: 34px;
 }
 
 .signup-form,
@@ -182,7 +182,8 @@ main > section,
 }
 
 .status-form {
-  padding: 8px 0 0;
+  gap: 14px;
+  padding: 12px 0 0;
 }
 
 .signup-form label,
@@ -213,12 +214,15 @@ main > section,
   font: inherit;
 }
 
+.status-form input {
+  min-height: 52px;
+}
+
 .status-form button {
-  justify-self: start;
-  min-width: 144px;
+  width: 100%;
   background: var(--accent);
   color: #fff;
-  min-height: 46px;
+  min-height: 52px;
   border: 0;
   padding: 0 20px;
   font: inherit;
