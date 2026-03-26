@@ -29,123 +29,176 @@
   <header class="site-header">
     <a class="brand" href="/chintai/">#HachijoChintai</a>
     <nav class="site-nav">
-      <a href="#status">空き状況</a>
-      <a href="#list">ご紹介中の物件</a>
+      <a href="#availability">空き状況</a>
+      <a href="#listings">物件</a>
+      <a href="#process">空き待ち</a>
       <a href="#contact">お問い合わせ</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero__image" aria-hidden="true"></div>
-      <div class="hero__panel">
-        <p class="hero__eyebrow">HACHIJOJIMA RENTAL</p>
-        <h1>八丈島賃貸情報<br>のんびり離島ぐらし</h1>
-        <p class="hero__lead">現在ご紹介中の賃貸5件はすべて満室です。<br>空き待ちのご登録と、賃貸探しのご相談を受け付けています。</p>
+      <div class="hero__media">
+        <div class="hero__image" aria-hidden="true"></div>
+        <div class="hero__stamp">
+          <span>5 / 5</span>
+          <p>all occupied</p>
+        </div>
+      </div>
+      <div class="hero__copy">
+        <p class="eyebrow">HACHIJOJIMA RENTAL EDIT</p>
+        <h1>八丈島で住む。<br>空きは少ない。<br>だから、待つ価値がある。</h1>
+        <p class="hero__lead">いまご紹介中の賃貸5件はすべて満室です。このページは、八丈島の賃貸事情を知り、空きが出たときに動けるようにしておくための案内ページです。</p>
         <div class="hero__actions">
-          <a class="button button--solid" href="#status">いまの状況を見る</a>
-          <a class="button button--ghost" href="#contact">お問い合わせ</a>
+          <a class="button button--solid" href="#availability">いまの状況を見る</a>
+          <a class="button button--ghost" href="#contact">問い合わせる</a>
         </div>
       </div>
     </section>
 
-    <section class="intro">
-      <div class="intro__copy">
-        <p>東京の南国・八丈島。移住人気の高いこの島では、賃貸物件の流通はごくわずかです。</p>
-        <p>このページでは、いまご紹介している物件の状況と、空きが出たときに受け取れるご案内をまとめています。今すぐ募集がなくても、待てる方には意味のあるページにしておきたいと考えています。</p>
+    <section class="availability" id="availability">
+      <div class="availability__intro">
+        <p class="eyebrow">CURRENT STATUS</p>
+        <h2>現在の募集状況</h2>
+        <p>八丈島の賃貸は、そもそも表に出る数が多くありません。いま掲載している5件もすべて入居中です。けれど、空きが出るときは急に動きます。だからこのページでは、募集がない時期でも、次に備えられる状態を保っています。</p>
       </div>
-      <aside class="status-card" id="status">
-        <p class="status-card__label">Current Status</p>
-        <h2>現在ご紹介中の5件は、すべて満室です。</h2>
-        <p>空き予定が出た際にお知らせできるよう、メール登録を受け付けています。個別の条件相談や家主様からの掲載相談もこちらからどうぞ。</p>
-      </aside>
+      <div class="availability__panel">
+        <div class="availability__metric">
+          <strong>5件</strong>
+          <span>現在掲載中</span>
+        </div>
+        <div class="availability__metric">
+          <strong>満室</strong>
+          <span>空室予定未定</span>
+        </div>
+        <div class="availability__metric">
+          <strong>受付中</strong>
+          <span>空き待ち登録 / 相談</span>
+        </div>
+      </div>
     </section>
 
-    <section class="signup">
-      <div class="signup__copy">
-        <p class="section-kicker">MAIL SERVICE</p>
-        <h2>空き情報メールを受け取る</h2>
-        <p>次に空きが出たとき、まず情報を受け取りたい方向けの登録フォームです。非公開で動く物件や、募集開始前のご案内が出ることもあります。</p>
+    <section class="mailer">
+      <div class="mailer__copy">
+        <p class="eyebrow">MAIL SERVICE</p>
+        <h2>空き待ちの列に入っておく</h2>
+        <p>募集開始前や、表に出る前の段階でお知らせできることがあります。まずはメール登録だけしておいて、動きがあったときに受け取れる状態にしておくのが現実的です。</p>
       </div>
-      <form class="signup-form" action="https://formsubmit.co/ouchi.hachijo@gmail.com" method="POST">
+      <form class="mailer__form" action="https://formsubmit.co/ouchi.hachijo@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="八丈島賃貸 空き情報メール登録">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://hachijojima.github.io/chintai/?mail=sent#status">
+        <input type="hidden" name="_next" value="https://hachijojima.github.io/chintai/?mail=sent#availability">
         <label>
           <span>メールアドレス</span>
           <input name="email" type="email" placeholder="メールアドレスを入力" required>
         </label>
-        <button type="submit">登録</button>
+        <button type="submit">登録する</button>
       </form>
-      <p class="signup__thanks" id="mail-thanks" hidden>登録を受け付けました。空き情報が出た際にご案内します。</p>
+      <p class="notice notice--success" id="mail-thanks" hidden>登録を受け付けました。空き情報が出た際にご案内します。</p>
     </section>
 
-    <section class="listings" id="list">
+    <section class="story-strip">
+      <div class="story-strip__block">
+        <p class="eyebrow">WHY THIS PAGE EXISTS</p>
+        <h2>募集がない時期にも、ページは必要です。</h2>
+      </div>
+      <div class="story-strip__block">
+        <p>賃貸の動きが静かな時期ほど、何を待てばいいのか、どんな物件があるのか、どんな暮らしがあり得るのかが見えにくくなります。ここでは「いま借りられるか」だけでなく、「次に動くときの判断材料」を残しています。</p>
+      </div>
+    </section>
+
+    <section class="listings" id="listings">
       <div class="section-head">
-        <p class="section-kicker">LISTINGS</p>
+        <p class="eyebrow">PROPERTY MOODBOARD</p>
         <h2>ご紹介中の物件</h2>
-        <p>いまはすべて満室ですが、島内の雰囲気と物件の方向性が伝わるように残しています。</p>
+        <p>いまは満室でも、八丈島でどんな住まい方があり得るのかは見えるようにしておきたい。そんな意図で残している一覧です。</p>
       </div>
 
-      <div class="listing-grid">
-        <article class="listing-card">
-          <div class="listing-card__image" style="background-image:url('https://storage.googleapis.com/studio-design-asset-files/projects/Kwa5yygkaX/s-2400x1800_v-frms_webp_c04c887c-5f67-4d09-9c8f-e9bd3aa07caa_small.webp')"></div>
-          <div class="listing-card__body">
-            <p class="listing-card__place">三根 / MITSUNE</p>
-            <h3>4DK</h3>
-            <p class="listing-card__status">現在満室</p>
-            <p>閑静な住宅地に佇む、平屋約100平米の広いお家。底土・神湊に徒歩圏内で、八丈島暮らしを実感できる一棟です。</p>
+      <div class="listing-stack">
+        <article class="listing listing--feature">
+          <div class="listing__visual" style="background-image:url('https://storage.googleapis.com/studio-design-asset-files/projects/Kwa5yygkaX/s-2400x1800_v-frms_webp_c04c887c-5f67-4d09-9c8f-e9bd3aa07caa_small.webp')"></div>
+          <div class="listing__body">
+            <p class="listing__place">三根 / MITSUNE</p>
+            <h3>平屋約100平米の4DK</h3>
+            <p class="listing__status">現在満室</p>
+            <p>底土・神湊に徒歩圏内。広さと暮らしやすさのバランスがよく、八丈島に住む感覚をまっすぐ味わえるタイプです。</p>
           </div>
         </article>
 
-        <article class="listing-card">
-          <a class="listing-card__image listing-card__image--kashitate" href="/chintai/kashitate/" aria-label="樫立の詳細を見る"></a>
-          <div class="listing-card__body">
-            <p class="listing-card__place">樫立 / KASHITATE</p>
-            <h3>3DK + STOCKROOM</h3>
-            <p class="listing-card__status">現在満室</p>
-            <p>希少な家具付き賃貸。バッグひとつで古民家暮らしを始められるタイプで、空き待ちの問い合わせが多い一件です。</p>
-            <p><a class="listing-card__link" href="/chintai/kashitate/">詳細を見る</a></p>
-          </div>
-        </article>
+        <div class="listing-grid">
+          <article class="listing listing--card">
+            <a class="listing__visual listing__visual--soft" href="/chintai/kashitate/" aria-label="樫立の詳細を見る"></a>
+            <div class="listing__body">
+              <p class="listing__place">樫立 / KASHITATE</p>
+              <h3>家具付き 3DK + 倉庫</h3>
+              <p class="listing__status">現在満室</p>
+              <p>バッグひとつで古民家暮らしを始めやすい一件。詳細原稿も残しています。</p>
+              <p><a class="listing__link" href="/chintai/kashitate/">詳細を見る</a></p>
+            </div>
+          </article>
 
-        <article class="listing-card">
-          <div class="listing-card__image listing-card__image--okago"></div>
-          <div class="listing-card__body">
-            <p class="listing-card__place">大賀郷 / OKAGO</p>
-            <h3>2K</h3>
-            <p class="listing-card__status">現在満室</p>
-            <p>オーシャンビューのダイニングが印象的なコンパクト物件。窓の外に八丈ブルーが広がる、景色重視の方向けです。</p>
-          </div>
-        </article>
+          <article class="listing listing--card">
+            <div class="listing__visual listing__visual--sea"></div>
+            <div class="listing__body">
+              <p class="listing__place">大賀郷 / OKAGO</p>
+              <h3>景色重視の2K</h3>
+              <p class="listing__status">現在満室</p>
+              <p>オーシャンビューのダイニングが印象的。住まいに景色を求める方向けのタイプです。</p>
+            </div>
+          </article>
 
-        <article class="listing-card listing-card--muted">
-          <div class="listing-card__image listing-card__image--soon"></div>
-          <div class="listing-card__body">
-            <p class="listing-card__place">紹介予定物件</p>
-            <h3>Coming Soon</h3>
-            <p class="listing-card__status">募集停止中</p>
-            <p>公開前のため詳細は伏せています。条件がまとまり次第、空き情報メールから先にご案内する場合があります。</p>
-          </div>
-        </article>
+          <article class="listing listing--card listing--muted">
+            <div class="listing__visual listing__visual--quiet"></div>
+            <div class="listing__body">
+              <p class="listing__place">紹介予定物件</p>
+              <h3>Coming Soon</h3>
+              <p class="listing__status">募集停止中</p>
+              <p>まだ条件整理の途中で、公開前のもの。空き情報メールから先に動く可能性があります。</p>
+            </div>
+          </article>
 
-        <article class="listing-card listing-card--muted">
-          <div class="listing-card__image listing-card__image--owner"></div>
-          <div class="listing-card__body">
-            <p class="listing-card__place">掲載候補</p>
-            <h3>Owner Side</h3>
-            <p class="listing-card__status">調整中</p>
-            <p>家主様からのご相談を受けながら、公開可否や募集条件を整えていく枠です。掲載相談は下部フォームから受け付けています。</p>
-          </div>
+          <article class="listing listing--card listing--muted">
+            <div class="listing__visual listing__visual--owner"></div>
+            <div class="listing__body">
+              <p class="listing__place">家主様のご相談</p>
+              <h3>Owner Side</h3>
+              <p class="listing__status">受付中</p>
+              <p>掲載前の相談、募集条件の整理、見せ方の相談なども受け付けています。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="section-head">
+        <p class="eyebrow">HOW TO WAIT WELL</p>
+        <h2>空きが少ない島で、待ち方を整える</h2>
+      </div>
+      <div class="process-grid">
+        <article>
+          <span>01</span>
+          <h3>条件を先に言葉にする</h3>
+          <p>エリア、広さ、予算、車の有無、家具付き希望などを先に整理しておくと、動いたときに早いです。</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>空き情報を受け取れるようにする</h3>
+          <p>一般公開前に話が進むこともあるので、まずは受け取れる状態をつくるのが実務的です。</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>募集が出たときに迷わない</h3>
+          <p>八丈島の賃貸は、出たら早いです。住み方のイメージまで先に持っておくと判断しやすくなります。</p>
         </article>
       </div>
     </section>
 
     <section class="contact" id="contact">
       <div class="section-head">
-        <p class="section-kicker">CONTACT</p>
+        <p class="eyebrow">CONTACT</p>
         <h2>お問い合わせ</h2>
-        <p>賃貸探し、空き待ち、家主様からの掲載相談、取材などはこちらからお送りください。</p>
+        <p>空き待ち、賃貸探し、家主様からの掲載相談、取材などはこちらからお送りください。</p>
       </div>
 
       <form class="contact-form" action="https://formsubmit.co/ouchi.hachijo@gmail.com" method="POST">
@@ -175,13 +228,13 @@
             <option value="その他">その他</option>
           </select>
         </label>
-        <label>
+        <label class="contact-form__full">
           <span>ご要望など</span>
           <textarea name="message" placeholder="ご自由にお書きください" rows="7"></textarea>
         </label>
-        <button type="submit">送信</button>
+        <button type="submit">送信する</button>
       </form>
-      <p class="contact__thanks" id="contact-thanks" hidden>お問い合わせを受け付けました。内容を確認のうえご連絡します。</p>
+      <p class="notice notice--success" id="contact-thanks" hidden>お問い合わせを受け付けました。内容を確認のうえご連絡します。</p>
     </section>
   </main>
 
