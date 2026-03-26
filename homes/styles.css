@@ -8,6 +8,8 @@
   --navy: #1e3960;
   --navy-deep: #132540;
   --gold: #b78b4b;
+  --cta: #d56d3c;
+  --cta-deep: #bc5729;
   --sand: #d8c1a0;
   --shadow: 0 24px 60px rgba(20, 31, 48, 0.14);
   --shadow-soft: 0 14px 34px rgba(20, 31, 48, 0.1);
@@ -252,8 +254,9 @@ textarea {
 }
 
 .button--solid {
-  background: linear-gradient(135deg, var(--gold), #c59a56);
+  background: linear-gradient(135deg, var(--cta), var(--cta-deep));
   color: #fff;
+  box-shadow: 0 14px 28px rgba(188, 87, 41, 0.28);
 }
 
 .button--ghost {
