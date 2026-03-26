@@ -174,25 +174,33 @@ main > section,
 }
 
 .signup-form,
+.status-form,
 .contact-form {
   display: grid;
   gap: 18px;
   padding: 28px;
 }
 
+.status-form {
+  padding: 8px 0 0;
+}
+
 .signup-form label,
+.status-form label,
 .contact-form label {
   display: grid;
   gap: 8px;
 }
 
 .signup-form span,
+.status-form span,
 .contact-form span {
   font-size: 14px;
   font-weight: 700;
 }
 
 .signup-form input,
+.status-form input,
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
@@ -203,6 +211,18 @@ main > section,
   background: rgba(255, 255, 255, 0.92);
   color: var(--ink);
   font: inherit;
+}
+
+.status-form button {
+  justify-self: start;
+  min-width: 144px;
+  background: var(--accent);
+  color: #fff;
+  min-height: 46px;
+  border: 0;
+  padding: 0 20px;
+  font: inherit;
+  font-weight: 700;
 }
 
 .signup__thanks,
