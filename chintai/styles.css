@@ -115,7 +115,7 @@ main > section,
 
 .hero h1 {
   color: #fff;
-  font-size: clamp(40px, 5.2vw, 68px);
+  font-size: 72px;
   line-height: 1.08;
   letter-spacing: 0.04em;
   text-shadow: 0 6px 22px rgba(14, 18, 27, 0.42);
@@ -476,6 +476,10 @@ main > section,
     width: calc(100% - 80px);
   }
 
+  .hero h1 {
+    font-size: 56px;
+  }
+
   .detail-summary {
     position: static;
   }
@@ -521,7 +525,7 @@ main > section,
   }
 
   .hero h1 {
-    font-size: 25px;
+    font-size: 36px;
     line-height: 1.08;
     letter-spacing: 0.01em;
   }
@@ -561,7 +565,7 @@ main > section,
   }
 
   .hero h1 {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 1.14;
     letter-spacing: 0.01em;
   }
