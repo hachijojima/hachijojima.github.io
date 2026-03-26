@@ -145,24 +145,9 @@ textarea {
   position: relative;
   overflow: clip;
   padding: 54px 0 28px;
-}
-
-.hero__image,
-.hero__veil {
-  position: absolute;
-  inset: 0;
-}
-
-.hero__image {
   background:
-    linear-gradient(180deg, rgba(13, 28, 47, 0.24), rgba(13, 28, 47, 0.58)),
-    url("https://storage.googleapis.com/production-os-assets/assets/6a84ca4f-1306-4452-a7ad-7c85684ca88e") center 52% / cover no-repeat;
-  transform: scale(1.03);
-}
-
-.hero__veil {
-  background:
-    linear-gradient(90deg, rgba(15, 26, 45, 0.56) 0%, rgba(15, 26, 45, 0.1) 50%, rgba(15, 26, 45, 0.5) 100%);
+    radial-gradient(circle at top right, rgba(216, 193, 160, 0.18), transparent 28%),
+    linear-gradient(135deg, #1d365a 0%, #233d62 38%, #13243d 100%);
 }
 
 .hero__inner {
@@ -216,7 +201,7 @@ textarea {
 }
 
 .hero__lead {
-  max-width: 540px;
+  max-width: 620px;
   margin: 24px 0 0;
   color: rgba(255, 250, 241, 0.92);
   font-size: 16px;
@@ -441,39 +426,24 @@ textarea {
 }
 
 .wide-banner {
-  min-height: 156px;
-  padding: 22px 28px;
+  min-height: 0;
+  padding: 20px 24px;
   border-radius: var(--radius-md);
+  background: rgba(30, 57, 96, 0.06);
   box-shadow: var(--shadow-soft);
-  display: flex;
-  align-items: flex-end;
-  border: 1px solid rgba(255, 255, 255, 0.24);
+  border: 1px solid rgba(24, 34, 49, 0.08);
 }
 
 .wide-banner p {
   margin: 0;
-  max-width: 520px;
+  max-width: none;
   padding: 0;
-  color: rgba(255, 249, 239, 0.96);
+  color: var(--navy-deep);
   font-family: var(--font-sans);
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
   line-height: 1.7;
   letter-spacing: 0.04em;
-  text-shadow: 0 8px 24px rgba(8, 16, 30, 0.34);
-}
-
-.wide-banner--harbor {
-  background:
-    linear-gradient(180deg, rgba(11, 24, 42, 0.18), rgba(11, 24, 42, 0.38)),
-    url("assets/banner-2.png") center center / cover no-repeat;
-}
-
-.wide-banner--ship,
-.wide-banner--quiet {
-  background:
-    linear-gradient(180deg, rgba(11, 24, 42, 0.14), rgba(11, 24, 42, 0.34)),
-    url("assets/ship-strip-wide.png") center center / cover no-repeat;
 }
 
 .benefit-grid {
