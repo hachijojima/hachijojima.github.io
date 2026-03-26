@@ -47,13 +47,15 @@ main > section,
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 24px;
+  width: min(var(--content), calc(100% - 48px));
+  margin: 0 auto;
+  padding: 24px 0;
   background: rgba(248, 246, 241, 0.82);
   backdrop-filter: blur(14px);
 }
 
 .brand {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--ink);
@@ -90,7 +92,7 @@ main > section,
 .hero__panel {
   position: relative;
   z-index: 1;
-  width: min(560px, calc(100% - 56px));
+  width: min(620px, calc(100% - 56px));
   margin: 120px 0 80px auto;
   padding: 36px;
   background: var(--panel);
@@ -132,6 +134,7 @@ main > section,
 
 .hero__lead {
   margin: 24px 0 0;
+  max-width: 26em;
 }
 
 .signup-form button,
@@ -469,7 +472,8 @@ main > section,
   }
 
   .site-header {
-    padding: 18px 16px;
+    width: calc(100% - 32px);
+    padding: 18px 0;
   }
 
   .site-nav {
