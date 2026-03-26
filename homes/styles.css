@@ -328,7 +328,7 @@ textarea {
 
 .section-grid {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
+  grid-template-columns: 180px minmax(0, 1fr);
   gap: 40px;
   align-items: start;
 }
@@ -340,7 +340,7 @@ textarea {
 
 .section-heading h2,
 .contact-copy h2 {
-  font-size: clamp(36px, 4vw, 64px);
+  font-size: clamp(32px, 3.3vw, 52px);
   color: var(--navy-deep);
   word-break: keep-all;
   overflow-wrap: normal;
