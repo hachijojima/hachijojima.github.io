@@ -491,7 +491,7 @@ main > section,
   }
 
   .hero {
-    min-height: 560px;
+    min-height: 520px;
     border-radius: 10px;
   }
 
@@ -504,7 +504,7 @@ main > section,
   .hero__panel {
     left: 20px;
     right: 20px;
-    bottom: 20px;
+    bottom: 18px;
     width: auto;
   }
 
@@ -515,7 +515,7 @@ main > section,
   }
 
   .hero h1 {
-    font-size: 29px;
+    font-size: 28px;
     line-height: 1.12;
     letter-spacing: -0.02em;
   }
