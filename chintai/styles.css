@@ -117,10 +117,6 @@ main > section,
   line-height: 1.26;
 }
 
-.hero h1 span {
-  display: block;
-}
-
 .hero__lead,
 .intro p,
 .status-card p,
@@ -136,7 +132,7 @@ main > section,
 
 .hero__lead {
   margin: 24px 0 0;
-  max-width: 26em;
+  max-width: none;
 }
 
 .signup-form button,
@@ -499,9 +495,6 @@ main > section,
     font-size: 30px;
   }
 
-  .hero h1 span {
-    display: inline;
-  }
 
   .intro,
   .contact,
