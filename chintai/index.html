@@ -22,15 +22,15 @@
   <link rel="apple-touch-icon" type="image/png" href="https://storage.googleapis.com/production-os-assets/assets/3617054c-3f1c-4cec-a506-379e63a06a48">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="/chintai/">#HachijoChintai</a>
+    <a class="brand" href="/chintai/">八丈島賃貸情報</a>
     <nav class="site-nav">
       <a href="#status">空き状況</a>
-      <a href="#list">ご紹介中の物件</a>
+      <a href="#list">掲載物件</a>
       <a href="#contact">お問い合わせ</a>
     </nav>
   </header>
@@ -39,33 +39,29 @@
     <section class="hero">
       <div class="hero__image" aria-hidden="true"></div>
       <div class="hero__panel">
-        <p class="hero__eyebrow">HACHIJOJIMA RENTAL</p>
-        <h1>八丈島賃貸情報<br>のんびり離島ぐらし</h1>
-        <p class="hero__lead">現在ご紹介中の賃貸5件はすべて満室です。<br>空き待ちのご登録と、賃貸探しのご相談を受け付けています。</p>
-        <div class="hero__actions">
-          <a class="button button--solid" href="#status">いまの状況を見る</a>
-          <a class="button button--ghost" href="#contact">お問い合わせ</a>
-        </div>
+        <p class="hero__eyebrow">旅するように暮らす</p>
+        <h1>マガジンを手に取るように、<br>八丈島ぐらしをイメージする。</h1>
+        <p class="hero__lead">空きは多くありません。けれど、どんな家があり、どんな暮らしがあり得るのかは、静かに想像しておけます。現在ご紹介中の5件はすべて満室ですが、このページにはその輪郭を残しています。</p>
       </div>
     </section>
 
     <section class="intro">
       <div class="intro__copy">
-        <p>東京の南国・八丈島。移住人気の高いこの島では、賃貸物件の流通はごくわずかです。</p>
-        <p>このページでは、いまご紹介している物件の状況と、空きが出たときに受け取れるご案内をまとめています。今すぐ募集がなくても、待てる方には意味のあるページにしておきたいと考えています。</p>
+        <p>八丈島の賃貸は、数が多いわけではありません。出会える家は限られていて、そのぶん、ひとつひとつの住まいに土地の気配が色濃く残ります。</p>
+        <p>海が近い家、緑に囲まれた家、家具ごと生活を受け渡すような家。ここでは、いますぐ借りられるかどうかだけでなく、島で暮らすイメージをゆっくり膨らませられるように、掲載中の物件と空き待ちの窓口をまとめています。</p>
       </div>
       <aside class="status-card" id="status">
-        <p class="status-card__label">Current Status</p>
+        <p class="status-card__label">現在の空き状況</p>
         <h2>現在ご紹介中の5件は、すべて満室です。</h2>
-        <p>空き予定が出た際にお知らせできるよう、メール登録を受け付けています。個別の条件相談や家主様からの掲載相談もこちらからどうぞ。</p>
+        <p>空き予定が出た際にお知らせできるよう、メール登録を受け付けています。急いで選ぶというより、次に動くタイミングへ向けて、先に知っておくためのページです。</p>
       </aside>
     </section>
 
     <section class="signup">
       <div class="signup__copy">
-        <p class="section-kicker">MAIL SERVICE</p>
+        <p class="section-kicker">空き情報メール</p>
         <h2>空き情報メールを受け取る</h2>
-        <p>次に空きが出たとき、まず情報を受け取りたい方向けの登録フォームです。非公開で動く物件や、募集開始前のご案内が出ることもあります。</p>
+        <p>次に空きが出たとき、まず情報を受け取りたい方向けの登録フォームです。非公開で動く物件や、募集開始前のご案内が出ることもあります。旅の支度のように、先に整えておくための登録です。</p>
       </div>
       <form class="signup-form" action="https://formsubmit.co/ouchi.hachijo@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="八丈島賃貸 空き情報メール登録">
@@ -82,9 +78,9 @@
 
     <section class="listings" id="list">
       <div class="section-head">
-        <p class="section-kicker">LISTINGS</p>
+        <p class="section-kicker">掲載物件</p>
         <h2>ご紹介中の物件</h2>
-        <p>いまはすべて満室ですが、島内の雰囲気と物件の方向性が伝わるように残しています。</p>
+        <p>いまはすべて満室ですが、八丈島でどんな住まいと出会えるのか、その雰囲気が伝わるように残しています。</p>
       </div>
 
       <div class="listing-grid">
@@ -143,7 +139,7 @@
 
     <section class="contact" id="contact">
       <div class="section-head">
-        <p class="section-kicker">CONTACT</p>
+        <p class="section-kicker">お問い合わせ</p>
         <h2>お問い合わせ</h2>
         <p>賃貸探し、空き待ち、家主様からの掲載相談、取材などはこちらからお送りください。</p>
       </div>
