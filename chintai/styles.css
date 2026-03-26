@@ -488,15 +488,26 @@ main > section,
     border-radius: 10px;
   }
 
+  .hero__image {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.46)),
+      url("https://storage.googleapis.com/studio-design-asset-files/projects/Kwa5yygkaX/s-2400x1800_v-frms_webp_c04c887c-5f67-4d09-9c8f-e9bd3aa07caa_small.webp") 42% center / cover no-repeat;
+  }
+
   .hero__panel {
     width: calc(100% - 24px);
-    margin: 86px 12px 24px auto;
+    margin: 124px 16px 28px 20px;
   }
 
   .hero h1,
   .section-head h2,
   .status-card h2 {
     font-size: 30px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    line-height: 1.14;
   }
 
 
