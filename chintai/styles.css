@@ -1,6 +1,6 @@
 :root {
   --bg: #f8f6f1;
-  --panel: rgba(255, 255, 255, 0.86);
+  --panel: rgba(248, 246, 241, 0.88);
   --ink: #222222;
   --muted: #676d76;
   --line: rgba(34, 34, 34, 0.1);
@@ -50,7 +50,7 @@ main > section,
   width: min(var(--content), calc(100% - 48px));
   margin: 0 auto;
   padding: 24px 0;
-  background: var(--bg);
+  background: transparent;
 }
 
 .brand {
@@ -95,7 +95,7 @@ main > section,
   margin: 120px 0 80px auto;
   padding: 36px;
   background: var(--panel);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(6px);
   border-radius: 12px 0 0 12px;
 }
 
