@@ -328,14 +328,13 @@ textarea {
 
 .section-grid {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 40px;
+  grid-template-columns: 1fr;
+  gap: 24px;
   align-items: start;
 }
 
 .section-heading {
-  position: sticky;
-  top: 118px;
+  position: static;
 }
 
 .section-heading h2,
@@ -345,6 +344,10 @@ textarea {
   word-break: keep-all;
   overflow-wrap: normal;
   line-break: strict;
+}
+
+.section-heading h2 {
+  max-width: 10em;
 }
 
 .section-content {
@@ -640,13 +643,8 @@ textarea {
 
 @media (max-width: 1080px) {
   .hero__inner,
-  .section-grid,
   .contact-shell {
     grid-template-columns: 1fr;
-  }
-
-  .section-heading {
-    position: static;
   }
 
   .benefit-grid,
