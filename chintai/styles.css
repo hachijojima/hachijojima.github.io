@@ -118,7 +118,6 @@ main > section,
 }
 
 .hero__lead,
-.intro p,
 .status-card p,
 .section-head p,
 .listing-card p,
@@ -128,6 +127,11 @@ main > section,
 .site-footer p {
   font-size: 16px;
   line-height: 1.9;
+}
+
+.intro p {
+  font-size: 18px;
+  line-height: 1.85;
 }
 
 .hero__lead {
