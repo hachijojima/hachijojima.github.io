@@ -285,6 +285,18 @@ main > section,
     linear-gradient(180deg, #9ab3c9, #dde9f1);
 }
 
+.listing-card__image--mitsune-1k {
+  background:
+    linear-gradient(135deg, rgba(118, 116, 110, 0.08), rgba(118, 116, 110, 0.28)),
+    linear-gradient(180deg, #d6d2c6, #f3efe6);
+}
+
+.listing-card__image--mitsune-3ldk {
+  background:
+    linear-gradient(135deg, rgba(71, 86, 96, 0.08), rgba(71, 86, 96, 0.28)),
+    linear-gradient(180deg, #b9c5cf, #e8edf2);
+}
+
 .listing-card__image--soon {
   background:
     linear-gradient(135deg, rgba(94, 88, 76, 0.08), rgba(94, 88, 76, 0.28)),
