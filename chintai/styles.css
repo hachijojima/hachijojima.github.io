@@ -1,6 +1,5 @@
 :root {
   --bg: #f8f6f1;
-  --panel: rgba(248, 246, 241, 0.58);
   --ink: #222222;
   --muted: #676d76;
   --line: rgba(34, 34, 34, 0.1);
@@ -92,14 +91,8 @@ main > section,
   position: relative;
   z-index: 1;
   width: min(760px, calc(100% - 56px));
-  margin: 120px 0 80px auto;
-  padding: 36px;
-  background:
-    linear-gradient(135deg, rgba(248, 246, 241, 0.64), rgba(248, 246, 241, 0.52));
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(248, 246, 241, 0.1);
-  box-shadow: 0 16px 34px rgba(25, 31, 42, 0.06);
-  border-radius: 12px 0 0 12px;
+  margin: 132px 48px 88px auto;
+  padding: 0;
 }
 
 .hero__eyebrow,
@@ -117,6 +110,11 @@ main > section,
   margin: 0;
   font-size: clamp(32px, 4vw, 48px);
   line-height: 1.26;
+}
+
+.hero h1 {
+  color: #fff;
+  text-shadow: 0 4px 18px rgba(14, 18, 27, 0.34);
 }
 
 .hero__lead,
@@ -490,9 +488,7 @@ main > section,
 
   .hero__panel {
     width: calc(100% - 24px);
-    margin: 86px 0 20px auto;
-    padding: 24px 22px;
-    border-radius: 10px 0 0 10px;
+    margin: 86px 12px 24px auto;
   }
 
   .hero h1,
