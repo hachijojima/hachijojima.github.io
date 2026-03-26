@@ -342,6 +342,9 @@ textarea {
 .contact-copy h2 {
   font-size: clamp(36px, 4vw, 64px);
   color: var(--navy-deep);
+  word-break: keep-all;
+  overflow-wrap: normal;
+  line-break: strict;
 }
 
 .section-content {
