@@ -111,7 +111,6 @@ main > section,
 
 .hero h1,
 .section-head h2,
-.signup-card h2,
 .status-card h2 {
   margin: 0;
   font-size: clamp(32px, 4vw, 50px);
@@ -122,7 +121,6 @@ main > section,
 .intro p,
 .status-card p,
 .section-head p,
-.signup-card p,
 .listing-card p,
 .contact-form span,
 .contact__thanks,
@@ -158,12 +156,10 @@ main > section,
 
 .intro__aside {
   display: grid;
-  gap: 24px;
   align-content: start;
 }
 
 .status-card,
-.signup-card,
 .signup-form,
 .contact-form,
 .listing-card {
@@ -182,29 +178,6 @@ main > section,
   display: grid;
   gap: 18px;
   padding: 28px;
-}
-
-.signup-card {
-  display: grid;
-  gap: 16px;
-  padding: 30px;
-}
-
-.signup-card h2,
-.status-card h2 {
-  font-size: clamp(28px, 3vw, 40px);
-}
-
-.signup-card .section-kicker,
-.signup-card p {
-  margin: 0;
-}
-
-.signup-card .signup-form {
-  padding: 0;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
 }
 
 .signup-form label,
@@ -494,7 +467,6 @@ main > section,
 
   .hero h1,
   .section-head h2,
-  .signup-card h2,
   .status-card h2 {
     font-size: 30px;
   }
