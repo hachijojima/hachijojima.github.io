@@ -1,15 +1,15 @@
 :root {
-  --bg: #f4efe7;
-  --paper: rgba(255, 251, 245, 0.78);
-  --paper-strong: rgba(255, 251, 245, 0.92);
-  --ink: #1d2530;
-  --muted: #667283;
+  --bg: #f5f3ee;
+  --paper: rgba(255, 255, 252, 0.78);
+  --paper-strong: rgba(255, 255, 252, 0.92);
+  --ink: #22262b;
+  --muted: #6d747b;
   --line: rgba(29, 37, 48, 0.1);
-  --accent: #bb6d3f;
-  --accent-deep: #8f4f2b;
-  --olive: #69735a;
-  --danger: #b33b2f;
-  --shadow: 0 24px 60px rgba(37, 31, 25, 0.12);
+  --accent: #5f6d78;
+  --accent-deep: #4f5b65;
+  --olive: #66705f;
+  --danger: #8f4337;
+  --shadow: 0 10px 24px rgba(37, 31, 25, 0.06);
   --content: 1180px;
 }
 
@@ -25,10 +25,7 @@ body {
   margin: 0;
   color: var(--ink);
   font-family: "Noto Sans JP", sans-serif;
-  background:
-    radial-gradient(circle at top right, rgba(187, 109, 63, 0.12), transparent 24%),
-    radial-gradient(circle at left 30%, rgba(105, 115, 90, 0.08), transparent 22%),
-    linear-gradient(180deg, #fcfaf6 0%, var(--bg) 100%);
+  background: linear-gradient(180deg, #fbfaf7 0%, var(--bg) 100%);
 }
 
 a {
@@ -53,9 +50,9 @@ main > section,
   justify-content: space-between;
   gap: 24px;
   padding: 22px 24px;
-  background: rgba(252, 250, 246, 0.82);
+  background: rgba(251, 250, 247, 0.9);
   border-bottom: 1px solid rgba(29, 37, 48, 0.06);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(10px);
 }
 
 .brand {
@@ -115,47 +112,16 @@ main > section,
   position: relative;
   min-height: 720px;
   overflow: hidden;
-  border-radius: 34px;
+  border-radius: 18px;
 }
 
 .hero__image {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(14, 18, 22, 0.12), rgba(14, 18, 22, 0.46)),
+    linear-gradient(180deg, rgba(14, 18, 22, 0.1), rgba(14, 18, 22, 0.34)),
     url("https://storage.googleapis.com/studio-design-asset-files/projects/Kwa5yygkaX/s-2400x1800_v-frms_webp_c04c887c-5f67-4d09-9c8f-e9bd3aa07caa_small.webp") center center / cover no-repeat;
-  transform: scale(1.03);
-}
-
-.hero__stamp {
-  position: absolute;
-  right: 24px;
-  bottom: 24px;
-  width: 156px;
-  height: 156px;
-  display: grid;
-  place-items: center;
-  padding: 18px;
-  border-radius: 999px;
-  background: rgba(255, 251, 245, 0.86);
-  color: var(--ink);
-  text-align: center;
-}
-
-.hero__stamp span {
-  display: block;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 54px;
-  line-height: 1;
-  letter-spacing: 0.04em;
-}
-
-.hero__stamp p {
-  margin: 0;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 15px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  transform: scale(1.01);
 }
 
 .hero__copy {
@@ -164,9 +130,8 @@ main > section,
   gap: 20px;
   min-height: 720px;
   padding: 48px;
-  border-radius: 34px;
-  background:
-    linear-gradient(180deg, rgba(255, 251, 245, 0.96), rgba(255, 247, 240, 0.9));
+  border-radius: 18px;
+  background: var(--paper-strong);
 }
 
 .hero h1,
@@ -174,9 +139,9 @@ main > section,
 .mailer__copy h2,
 .availability__intro h2 {
   margin: 0;
-  font-size: clamp(38px, 4.8vw, 72px);
-  line-height: 1.08;
-  letter-spacing: -0.02em;
+  font-size: clamp(34px, 4.4vw, 62px);
+  line-height: 1.16;
+  letter-spacing: -0.01em;
 }
 
 .hero__lead,
@@ -227,7 +192,7 @@ main > section,
 .button--ghost {
   border-color: rgba(29, 37, 48, 0.16);
   color: var(--ink);
-  background: rgba(255, 255, 255, 0.42);
+  background: transparent;
 }
 
 .availability {
@@ -242,7 +207,7 @@ main > section,
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 18px;
   background: rgba(29, 37, 48, 0.08);
 }
 
@@ -278,7 +243,7 @@ main > section,
   display: grid;
   gap: 18px;
   padding: 30px;
-  border-radius: 28px;
+  border-radius: 18px;
 }
 
 .mailer__form label,
@@ -325,7 +290,7 @@ main > section,
 }
 
 .story-strip__block {
-  padding: 34px;
+  padding: 26px 0 0;
   border-top: 1px solid rgba(29, 37, 48, 0.14);
 }
 
@@ -351,7 +316,7 @@ main > section,
 
 .listing {
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 18px;
 }
 
 .listing--feature {
@@ -369,6 +334,7 @@ main > section,
   display: block;
   min-height: 280px;
   background: #d9d4cb center center / cover no-repeat;
+  filter: saturate(0.88);
 }
 
 .listing--feature .listing__visual {
@@ -453,8 +419,8 @@ main > section,
 }
 
 .process-grid article {
-  padding: 28px;
-  border-radius: 28px;
+  padding: 24px;
+  border-radius: 18px;
 }
 
 .process-grid span {
@@ -502,7 +468,7 @@ main > section,
 .detail-hero__body {
   max-width: 860px;
   padding: 34px;
-  border-radius: 26px;
+  border-radius: 18px;
 }
 
 .detail-hero__body h1 {
@@ -669,15 +635,6 @@ main > section,
   .detail-cta,
   .process-grid article {
     padding: 22px;
-  }
-
-  .hero__stamp {
-    width: 126px;
-    height: 126px;
-  }
-
-  .hero__stamp span {
-    font-size: 42px;
   }
 
   .hero h1,
