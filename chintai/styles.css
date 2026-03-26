@@ -51,7 +51,6 @@ main > section,
   margin: 0 auto;
   padding: 24px 0;
   background: var(--bg);
-  backdrop-filter: blur(14px);
 }
 
 .brand {
